@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+} */
+
+@font-face {
+    font-family: "Sofia";
+    src: url('sofia-regular-webfont.eot'),
+         url('sofia-regular-webfont.woff') format('woff'),
+         url('sofia-regular-webfont.ttf') format('ttf'),
+         url('sofia-regular-webfont.svg') format('svg');
+}
+
+body {
+   font-family: "Sofia";
+}

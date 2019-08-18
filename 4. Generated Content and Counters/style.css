@@ -1,0 +1,53 @@
+.container {
+    counter-reset: cnt;
+
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    width: 420px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.container::before {
+    display: block;
+    content: 'Hover over these items:';
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+.container span {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #78ccd2;
+    color: #186c72;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.container span::after {
+    counter-increment: cnt;
+    
+    content: " #" counter(cnt);
+
+    display: inline-block;
+    padding: 4px;
+}
+
+.container span::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: attr(data-title);
+    color: #666;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.container span:hover::before {
+    opacity: 1;
+}

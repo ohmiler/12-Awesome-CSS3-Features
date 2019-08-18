@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-section {
+    background-color: #cdebc4;
+    color: #6d8b64;
+    width: 520px;
+    float: left;
+    height: 500px;
+}
+
+.sidebar {
+    background-color: #ccc;
+    width: 350px;
+    float: right;
+    height: 400px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.container p {
+    padding-top: 100px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .main-section, .sidebar {
+        width: auto;
+        margin-bottom: 20px;
+        float: none;
+    }
+}

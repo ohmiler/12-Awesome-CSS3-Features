@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+}
+
+.container div {
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#el1 {
+    color: #524480;
+    background-color: #b2a4e0;
+}
+#el2 {
+    padding: 8px;
+    border: 10px solid #9ec551;
+    background: #fff;
+}
+#el3 {
+    padding: 32px;
+    background-color: #ccc;
+}

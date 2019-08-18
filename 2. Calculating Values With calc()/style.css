@@ -1,0 +1,42 @@
+html {
+    padding: 1rem 2rem;
+    background-color: #00174f;
+}
+
+h1 {
+    color: #ffd200;
+}
+
+section {
+    padding: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: calc(100% / 4);
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: calc(100% / 3);
+    }
+}
+@media (max-width: 550px) {
+    .column {
+        width: calc(100% / 2);
+    }
+}
+@media (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+}
